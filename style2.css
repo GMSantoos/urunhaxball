@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.945);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container-header {
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid rgb(255, 187, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.945);
+    z-index: 1;
+
+}
+
+.header-description {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-description nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header-description nav ul li a {
+    font-size: 20px;
+    color: rgb(255, 208, 0);
+    position: relative;
+}
+
+.header-description nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(255, 208, 0);
+    transition: .5s;
+}
+
+.header-description nav ul li a:hover::before {
+    width: 90px;
+}
+
+/* Efeito Fumaça */
+
+.efeito-amarelo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-40%, -50%);
+    z-index: 1;
+}
+
+.efeito-amarelo img {
+    width: 400px;
+    height: 400px;
+}
+
+.efeito-amarelo-second {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(53%, 35%);
+    z-index: 1;
+}
+
+.efeito-amarelo-second img {
+    width: 400px;
+    height: 400px;
+}
+
+/* Container Section one */
+
+.container-section-one {
+    width: 100vw;
+    height: 165vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-section-one .tabela-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tabela-section h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.tabela-section p {
+    font-size: 20px;
+    color: white;
+}
+
+.tabela-section p span {
+    color: rgb(255, 208, 0);
+}
+
+
+/* Tabela Times, Section Second */
+
+.tabela-camp {
+    width: 800px;
+    height: 50px;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.tabela-camp tr td {
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabela-camp tr td img {
+    width: 40px;
+    height: 40px;
+}
+
+.tabela-camp tr td .times {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tabela-camp tr td .pontos-time span {
+    color: white;
+}
+
+.tabela-camp .position-times {
+    color: rgb(255, 208, 0);
+}
+
+.tabela-camp .pontos-time {
+    color: rgb(255, 208, 0);
+}
+
+/* Estaticas Campeonato */
+
+.container-section-second {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.artilheiro h3 {
+    font-size: 30px;
+    color: rgba(255, 208, 0, 0.986);
+    margin-bottom: 30px;
+    background-color: transparent;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgba(255, 208, 0, 0.986);
+    font-family: 'Inter', sans-serif;
+    text-shadow: 1px 1px 20px black;
+}
+
+.estaticas-container-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.jogador-estaticas {
+    display: flex;
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+    width: 105%;
+}
+
+/* Emblemas */
+
+.emblema-estatica {
+    position: relative;
+}
+
+.emblema-estatica img {
+    width: 200px;
+    height: 200px;
+    animation: movimento 5s ease-in-out infinite;
+}
+
+@keyframes movimento {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+    
+}
+
+.player-estatica img {
+    width: 130px;
+    height: 110px;
+}
+
+.player-estatica {
+    position: absolute;
+    transform: translate(80%, 60%);
+}
+
+/* Estaticas Totais */
+
+.estaticastot h3 {
+    font-size: 30px;
+    color: white;
+}
+
+.estaticastot p {
+    font-size: 20px;
+    color: rgb(255, 208, 0);
+}
+
+.posestatic h4 {
+    font-size: 100px;
+    color: white;
+    opacity: 0.1;
+}
+
+/* Estaticas Direita */
+
+.estaticas-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.estaticas-gerais {
+    display: flex;
+    margin: 0 auto;
+    gap: 200px;
+}
+
+/* Estaticas Totais */
+
+.top-estaticas {
+    width: 100%;
+    height: 75vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    gap: 30px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.description-topestaticas h3 {
+    color: white;
+    margin-bottom: 30px;
+    background-color: transparent;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 1px 1px 20px black;
+}
+
+.tabela-estaticas {
+    width: 800px;
+    height: 50px;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.tabela-estaticas tr td {
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabela-estaticas tr td img {
+    width: 40px;
+    height: 40px;
+}
+
+.tabela-estaticas tr td .times {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tabela-estaticas .position-times {
+    color: rgb(255, 208, 0);
+}
+
+.tabela-estaticas .pontos-time {
+    color: rgb(255, 208, 0);
+}
+
+.tabela-estaticas .gols-estatica span {
+    color: rgb(255, 208, 0);
+}
+
+/* Footer */
+
+.footer-description {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(255, 187, 0);
+    
+}
+
+.follow-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.follow-page h2 {
+    font-size: 18px;
+    color: rgb(255, 187, 0);
+    font-weight: 500;
+}
+
+.follow-page i {
+    font-size: 25px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.follow-page i:hover {
+    transform: translateY(-5px);
+    transition: .5s;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1650px) {
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+
+    /* Header */
+
+    .container-header {
+        height: 20vh;
+        position: relative;
+    }
+
+    .header-description {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .top-estaticas {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+
+    /* Header */
+
+    .container-header {
+        height: 20vh;
+        position: relative;
+    }
+
+    .header-description {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #copaidresp {
+        display: none;
+    }
+
+    .header-description nav ul {
+        padding-left: 30px;
+    }
+
+    /* Section */
+
+    .container-section-one {
+        height: 170vh;
+    }
+
+    .tabela-camp {
+        max-width: 100%;
+    }
+
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 180vh;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(80%, 60%);
+        z-index: 1;
+    }
+
+    .estaticastot h3 {
+        font-size: 40px;
+    }
+
+    .posestatic h4 {
+        font-size: 70px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    .posestatic {
+        z-index: -1;
+    }
+
+    /* Section Tree */
+
+    .tabela-estaticas {
+        max-width: 800px;
+    }
+
+    .top-estaticas {
+        height: 80vh;
+    }
+
+    
+}
+
+@media screen and (max-width: 890px) {
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+
+    /* Header */
+
+    .container-header {
+        height: 20vh;
+        position: relative;
+    }
+
+    .header-description {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #copaidresp {
+        display: none;
+    }
+
+    .header-description nav ul {
+        padding-left: 30px;
+    }
+
+    /* Section */
+
+    .container-section-one {
+        height: 170vh;
+    }
+
+    .tabela-camp {
+        max-width: 650px;
+    }
+
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 180vh;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(80%, 60%);
+        z-index: 1;
+    }
+
+    .estaticastot h3 {
+        font-size: 40px;
+    }
+
+    .posestatic h4 {
+        font-size: 70px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    .posestatic {
+        z-index: -1;
+    }
+
+    /* Section Tree */
+
+    .tabela-estaticas {
+        max-width: 650px;
+    }
+
+    .top-estaticas {
+        height: 80vh;
+    }
+
+    
+}
+
+@media screen and (max-width: 670px) {
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+
+    /* Header */
+
+    .container-header {
+        height: 20vh;
+        position: relative;
+    }
+
+    .header-description {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #copaidresp {
+        display: none;
+    }
+
+    .header-description nav ul {
+        padding-left: 30px;
+    }
+
+    /* Section */
+
+    .container-section-one {
+        height: 170vh;
+    }
+
+    .tabela-camp {
+        max-width: 500px;
+    }
+
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 180vh;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(40%, 70%);
+    }
+
+    .estaticastot h3 {
+        font-size: 23px;
+    }
+
+    .posestatic h4 {
+        font-size: 50px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    /* Section Tree */
+
+    .tabela-estaticas {
+        max-width: 500px;
+    }
+
+    .top-estaticas {
+        height: 80vh;
+    }
+
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+
+    /* Header */
+
+    .container-header {
+        height: 20vh;
+        position: relative;
+    }
+
+    .header-description {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #copaidresp {
+        display: none;
+    }
+
+    .header-description nav ul {
+        padding-left: 30px;
+    }
+
+    /* Section */
+
+    .container-section-one {
+        height: 170vh;
+    }
+
+    .tabela-camp {
+        max-width: 350px;
+    }
+
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 180vh;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(40%, 70%);
+    }
+
+    .estaticastot h3 {
+        font-size: 23px;
+    }
+
+    .posestatic h4 {
+        font-size: 50px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    /* Section Tree */
+
+    .tabela-estaticas {
+        max-width: 350px;
+    }
+
+    .top-estaticas {
+        height: 80vh;
+    }
+
+}
+
+@media screen and (max-height: 600px) {
+    .container-section-one {
+        height: 240vh;
+    }
+
+    .container-section-second {
+        height: 290vh;
+    }
+
+    .container-header {
+        height: 30vh;
+    }
+
+    .top-estaticas {
+        height: 120vh;
+    }
+}
+
+@media screen and (max-height: 550px) {
+    .container-section-one {
+        height: 165vh;
+    }
+
+    .container-section-second {
+        height: 290vh;
+    }
+
+    .container-header {
+        height: 30vh;
+    }
+
+    .top-estaticas {
+        height: 120vh;
+    }
+}
