@@ -339,5 +339,13 @@ body {
     .container-section-one {
         display: none;
     }
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
 }
 
