@@ -96,7 +96,7 @@ body {
 /* Container Section one */
 
 .container-section-one {
-    width: 100vw;
+    width: 100%;
     height: 165vh;
     display: flex;
     flex-direction: column;
@@ -340,12 +340,13 @@ body {
 /* Footer */
 
 .footer-description {
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top: 2px solid rgb(255, 187, 0);
+    margin-top: 30px;
     
 }
 
@@ -399,8 +400,13 @@ body {
     }
 
     .top-estaticas {
-        height: 80vh;
+        height: 100%;
     }
+
+    .container-section-second {
+        height: 100%;
+    }
+
 }
 
 @media screen and (max-width: 1500px) {
@@ -436,7 +442,11 @@ body {
     /* Section */
 
     .container-section-one {
-        height: 170vh;
+        height: 100%;
+    }
+
+    .container-section-one .tabela-section {
+        margin-top: 40px;
     }
 
     .tabela-camp {
@@ -446,7 +456,7 @@ body {
     /* Section Two Estaticas */
 
     .container-section-second {
-        height: 180vh;
+        height: 100%;
     }
 
     .estaticas-gerais {
@@ -501,8 +511,12 @@ body {
     }
 
     .top-estaticas {
-        height: 80vh;
+        height: 100%;
     }
+
+    .alinhamentologo img {
+        width: 800px;
+    } 
 
     
 }
@@ -540,7 +554,11 @@ body {
     /* Section */
 
     .container-section-one {
-        height: 170vh;
+        height: 100%;
+    }
+
+    .container-section-one .tabela-section {
+        margin-top: 40px;
     }
 
     .tabela-camp {
@@ -550,7 +568,7 @@ body {
     /* Section Two Estaticas */
 
     .container-section-second {
-        height: 180vh;
+        height: 100%;
     }
 
     .estaticas-gerais {
@@ -605,8 +623,13 @@ body {
     }
 
     .top-estaticas {
-        height: 80vh;
+        height: 100%;
     }
+
+    .alinhamentologo img {
+        width: 650px;
+
+    } 
 
     
 }
@@ -641,10 +664,14 @@ body {
         padding-left: 30px;
     }
 
+    .container-section-one .tabela-section {
+        margin-top: 40px;
+    }
+
     /* Section */
 
     .container-section-one {
-        height: 170vh;
+        height: 100%;
     }
 
     .tabela-camp {
@@ -654,7 +681,7 @@ body {
     /* Section Two Estaticas */
 
     .container-section-second {
-        height: 180vh;
+        height: 100%;
     }
 
     .estaticas-gerais {
@@ -704,8 +731,13 @@ body {
     }
 
     .top-estaticas {
-        height: 80vh;
+        height: 100%;
     }
+
+    .alinhamentologo img {
+        width: 500px;
+
+    } 
 
     
 }
@@ -730,6 +762,10 @@ body {
     .header-description {
         flex-direction: column;
         gap: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     #copaidresp {
@@ -743,17 +779,21 @@ body {
     /* Section */
 
     .container-section-one {
-        height: 170vh;
+        height: 100%;
     }
 
     .tabela-camp {
         max-width: 350px;
     }
 
+    .container-section-one .tabela-section {
+        margin-top: 40px;
+    }
+
     /* Section Two Estaticas */
 
     .container-section-second {
-        height: 180vh;
+        height: 100%;
     }
 
     .estaticas-gerais {
@@ -803,7 +843,12 @@ body {
     }
 
     .top-estaticas {
-        height: 80vh;
+        height: 100%;
+    }
+
+    .alinhamentologo img {
+        width: 400px;
+
     }
 
 }
