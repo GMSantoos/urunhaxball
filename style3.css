@@ -18,7 +18,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.945);
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container-header {
@@ -92,8 +92,9 @@ body {
 /* Container Section one */
 
 .container-section-one {
-    width: 100vw;
-    height: 78vh;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 /* Posição dos Grupos */
@@ -335,6 +336,125 @@ body {
     justify-content: center;
 }
 
+/* Estaticas Campeonato */
+
+.container-section-second {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.artilheiro h3 {
+    font-size: 30px;
+    color: rgba(255, 208, 0, 0.986);
+    margin-bottom: 30px;
+    background-color: transparent;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgba(255, 208, 0, 0.986);
+    font-family: 'Inter', sans-serif;
+    text-shadow: 1px 1px 20px black;
+}
+
+.estaticas-container-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.jogador-estaticas {
+    display: flex;
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+    width: 105%;
+}
+
+/* Emblemas */
+
+.emblema-estatica {
+    position: relative;
+}
+
+.emblema-estatica img {
+    width: 200px;
+    height: 200px;
+    animation: movimento 5s ease-in-out infinite;
+}
+
+@keyframes movimento {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+    
+}
+
+.player-estatica img {
+    width: 130px;
+    height: 110px;
+}
+
+.player-estatica {
+    position: absolute;
+    transform: translate(80%, 60%);
+}
+
+.player-estatica img {
+    width: 130px;
+    height: 110px;
+}
+
+.player-estatica {
+    position: absolute;
+    transform: translate(80%, 60%);
+}
+
+/* Estaticas Totais */
+
+.estaticastot h3 {
+    font-size: 30px;
+    color: white;
+}
+
+.estaticastot p {
+    font-size: 20px;
+    color: rgb(255, 208, 0);
+}
+
+.posestatic h4 {
+    font-size: 100px;
+    color: white;
+    opacity: 0.1;
+}
+
+/* Estaticas Direita */
+
+.estaticas-container-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.estaticas-gerais {
+    display: flex;
+    margin: 0 auto;
+    gap: 200px;
+}
+
+/* Media Query */
+
 @media (max-width: 1570px) {
     .container-section-one {
         display: none;
@@ -346,6 +466,315 @@ body {
 
     .efeito-amarelo-second {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(80%, 60%);
+        z-index: 1;
+    }
+
+    .estaticastot h3 {
+        font-size: 40px;
+    }
+
+    .posestatic h4 {
+        font-size: 70px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    .posestatic {
+        z-index: -1;
+    }
+
+    .container-footer {
+        width: 100%;
+        height: 80px;
+        margin-top: 40px;
+    }
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(80%, 60%);
+        z-index: 1;
+    }
+
+    .estaticastot h3 {
+        font-size: 40px;
+    }
+
+    .posestatic h4 {
+        font-size: 70px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    .posestatic {
+        z-index: -1;
+    }
+
+    .container-footer {
+        width: 100%;
+        height: 8vh;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(80%, 60%);
+        z-index: 1;
+    }
+
+    .estaticastot h3 {
+        font-size: 40px;
+    }
+
+    .posestatic h4 {
+        font-size: 70px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    .posestatic {
+        z-index: -1;
+    }
+
+    .container-footer {
+        width: 100%;
+        height: 8vh;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(40%, 70%);
+    }
+
+    .estaticastot h3 {
+        font-size: 23px;
+    }
+
+    .posestatic h4 {
+        font-size: 50px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    .container-footer {
+        width: 100%;
+        height: 8vh;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    /* Section Two Estaticas */
+
+    .container-section-second {
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+        margin-top: 50px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(40%, 70%);
+    }
+
+    .estaticastot h3 {
+        font-size: 23px;
+    }
+
+    .posestatic h4 {
+        font-size: 50px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    .container-footer {
+        width: 100%;
+        height: 8vh;
+        margin-top: 20px;
     }
 }
 
