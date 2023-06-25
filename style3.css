@@ -149,6 +149,7 @@ body {
     padding: 3px 10px;
     background-color: rgb(238, 182, 0);
     margin-bottom: 30px;
+    text-align: center;
 }
 
 #description-gpone p {
@@ -173,8 +174,8 @@ body {
 }
 
 .logo-gpone #logo-ctn-gtwo {
-    width: 115px;
-    height: 115px;
+    width: 130px;
+    height: 130px;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 1px 1px 20px rgb(238, 182, 0);
@@ -192,30 +193,105 @@ body {
 
 /* URL DAS LOGOS */
 
+/* Primeiro Classificado */
+
 .logo-gpone .logo-gpone-one {
     background-image: url(img/aWlogo.png);
+    animation-name: avancar;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
 }
+
+@keyframes avancar {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(0px, 180px);
+    }
+
+    100% {
+        transform: translate(165px, 180px);
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+}
+
+/* CLASSIFICADO 1 - ACIMA */
+
 
 .logo-gpone .logo-gpone-two {
     background-image: url(img/logofutebol.png);
 }
 
 .logo-gpone .logo-gpone-tree {
-    background-image: url(img/logoibis.png);
+    background-image: url(img/logourun.webp);
     
 }
 
+/* Segunda Classificada */
+
 .logo-gpone .logo-gpone-for {
-    background-image: url(img/logourun.webp);
+    background-image: url(img/logoibis.png);
+    animation-name: avancartwo;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
+
+@keyframes avancartwo {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(168px, 0px);
+    }
+
+    100% {
+            transform: translate(168px, -215px);
+            background-color: transparent;
+            box-shadow: none;
+    }
+}
+
+/* SEGUNDA CLASSIFICADA - ACIMA */
 
 .logo-gpone .logo-gpone-five {
-    background-image: url(img/logoatletico-4096.png);
-}
-
-.logo-gpone .logo-gpone-six {
     background-image: url(img/Logoweb.png);
 }
+
+/* TERCEIRA EQUIPE CLASSIFICADA */
+
+.logo-gpone .logo-gpone-six {
+    background-image: url(img/logoatletico-4096.png);
+    animation-name: avancartr;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes avancartr {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(0px, 180px);
+    }
+
+    100% {
+        transform: translate(-165px, 180px);
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+/* TECEIRO TIME CLASSIFICADO - ACIMA */
 
 .logo-gpone .logo-gpone-sev {
     background-image: url(img/logostar.png);
