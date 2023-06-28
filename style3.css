@@ -107,7 +107,7 @@ body {
 
 .ctn-grupo-two {
     position: absolute;
-    top: 60%;
+    top: 64%;
     left: 10%;
 }
 
@@ -119,7 +119,7 @@ body {
 
 .ctn-grupo-for {
     position: absolute;
-    top: 60%;
+    top: 64%;
     right: 10%;
 }
 
@@ -253,7 +253,7 @@ body {
     }
 
     100% {
-            transform: translate(168px, -215px);
+            transform: translate(168px, -250px);
             background-color: transparent;
             box-shadow: none;
     }
@@ -292,10 +292,33 @@ body {
 }
 
 /* TECEIRO TIME CLASSIFICADO - ACIMA */
+/* QUARTO TIME CLASSIFICADO */
 
 .logo-gpone .logo-gpone-sev {
     background-image: url(img/logostar.png);
+    animation-name: avancaro;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
+
+@keyframes avancaro {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(-165px, 0px);
+    }
+
+    100% {
+        transform: translate(-165px, -245px);
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+/* QUARTO TIME CLASSIFICADO -ACIMA */
 
 .logo-gpone .logo-gpone-eith {
     background-image: url(img/logoeagles.png);
