@@ -213,17 +213,12 @@ body {
 /* URL DAS LOGOS */
 
 .eq-av {
-    height: 57%;
+    height: 58%;
 }
 
 /* Primeiro Classificado */
 
-.logo-gpone .eq-av {
-    animation-name: avancar;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
+
 
 .logo-gpone .eq-av .logo-gpone-one {
     background-image: url(img/aWlogo.png);
@@ -240,13 +235,15 @@ body {
     }
 
     50% {
-        transform: translate(0%, 41%);
+        transform: translate(0%, 145%);
+        box-shadow: none;
+        
     }
 
     100% {
-        transform: translate(55%, 41%);
+        transform: translate(114%, 145%);
         background-color: transparent;
-        box-shadow: none;
+        box-shadow: 1px 1px 20px rgb(238, 182, 0);
     }
     
 }
@@ -279,13 +276,14 @@ body {
     }
 
     50% {
-        transform: translate(0px, 0px);
+        transform: translate(114%, 0px);
+        box-shadow: none;
     }
 
     100% {
-            transform: translate(0px, 0px);
+            transform: translate(114%, -145%);
             background-color: transparent;
-            box-shadow: none;
+            box-shadow: 1px 1px 20px rgb(238, 182, 0);
     }
 }
 
@@ -311,13 +309,14 @@ body {
     }
 
     50% {
-        transform: translate(0px, 0px);
+        transform: translate(0px, 145%);
+        box-shadow: none;
     }
 
     100% {
-        transform: translate(0px, 0px);
+        transform: translate(-114%, 145%);
         background-color: transparent;
-        box-shadow: none;
+        box-shadow: 1px 1px 20px rgb(238, 182, 0);
     }
 }
 
@@ -338,13 +337,15 @@ body {
     }
 
     50% {
-        transform: translate(0px, 0px);
+        transform: translate(-114%, 0%);
+        box-shadow: none;
     }
 
     100% {
-        transform: translate(0px, 0px);
+        transform: translate(-114%, -145%);
         background-color: transparent;
         box-shadow: none;
+        box-shadow: 1px 1px 20px rgb(238, 182, 0);
     }
 }
 
