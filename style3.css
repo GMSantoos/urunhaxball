@@ -107,12 +107,18 @@ body {
     position: relative;
 }
 
+.left-ctngp {
+    width: 50%;
+    height: 100%;
+}
+
 /* Posição dos Grupos */
 
 .ctn-grupo-one {
     position: absolute;
     top: 0;
     left: 0; 
+    height: 100%;
 }
 
 .ctn-grupo-two {
@@ -175,6 +181,7 @@ body {
 .logo-gpone {
     display: flex;
     gap: 20px;
+    height: 91%;
 }
 
 .logo-gpone #logo-ctn-gpone {
@@ -222,11 +229,11 @@ body {
     }
 
     50% {
-        transform: translate(0px, 141%);
+        transform: translate(0px, 210px);
     }
 
     100% {
-        transform: translate(110%, 141%);
+        transform: translate(165px, 210px);
         background-color: transparent;
         box-shadow: none;
     }
@@ -261,11 +268,11 @@ body {
     }
 
     50% {
-        transform: translate(110%, 0px);
+        transform: translate(170px, 0px);
     }
 
     100% {
-            transform: translate(112%, -185%);
+            transform: translate(170px, -275px);
             background-color: transparent;
             box-shadow: none;
     }
@@ -293,11 +300,11 @@ body {
     }
 
     50% {
-        transform: translate(0px, 140%);
+        transform: translate(0px, 215px);
     }
 
     100% {
-        transform: translate(-106%, 140%);
+        transform: translate(-165px, 215px);
         background-color: transparent;
         box-shadow: none;
     }
@@ -320,11 +327,11 @@ body {
     }
 
     50% {
-        transform: translate(-105%, 0px);
+        transform: translate(-165px, 0px);
     }
 
     100% {
-        transform: translate(-105%, -185%);
+        transform: translate(-160px, -275px);
         background-color: transparent;
         box-shadow: none;
     }
