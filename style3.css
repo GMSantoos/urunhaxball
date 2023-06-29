@@ -213,7 +213,7 @@ body {
 /* URL DAS LOGOS */
 
 .eq-av {
-    height: 50%;
+    height: 57%;
 }
 
 /* Primeiro Classificado */
@@ -225,12 +225,12 @@ body {
     animation-fill-mode: forwards;
 }
 
-.logo-gpone .logo-gpone-one {
+.logo-gpone .eq-av .logo-gpone-one {
     background-image: url(img/aWlogo.png);
-    /* animation-name: avancar;
+    animation-name: avancar;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 
 }
 
@@ -240,11 +240,11 @@ body {
     }
 
     50% {
-        transform: translate(0%, 50%);
+        transform: translate(0%, 41%);
     }
 
     100% {
-        transform: translate(0%, 50%);
+        transform: translate(55%, 41%);
         background-color: transparent;
         box-shadow: none;
     }
