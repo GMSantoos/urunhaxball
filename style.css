@@ -92,7 +92,7 @@ body {
 
 .container-section-one {
     width: 100%;
-    height: 680px;
+    height: 750px;
     position: relative;
 }
 
@@ -167,13 +167,15 @@ body {
 
 .fundo-campeonato img {
     opacity: 0.3;
+    width: 980px;
+    height: 750px;
 }
 
 /* Follow Page */
 
 .container-footer {
     width: 100%;
-    height: 100px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
