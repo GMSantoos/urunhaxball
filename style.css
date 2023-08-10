@@ -238,6 +238,13 @@ body {
     justify-content: center;
 }
 
+/* Section Rodadas */
+
+#rdsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Media Query */
 
 @media screen and (max-width:1530px) {
