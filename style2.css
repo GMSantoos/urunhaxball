@@ -104,108 +104,110 @@ body {
     align-items: center;
 }
 
-.container-section-one .tabela-section {
+.container {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.tabela-section h2 {
-    font-size: 40px;
-    color: white;
-}
-
-.tabela-section p {
-    font-size: 20px;
-    color: white;
-}
-
-.tabela-section p span {
-    color: rgb(255, 208, 0);
-}
-
-#ps-times {
-    color: rgb(0, 238, 255);
-}
-
-#ps-timesl {
-    color: rgb(253, 116, 116);
-}
-
-.divgroups {
+    align-items: center;
     width: 100%;
-    height: 20vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.spangroups-one, .spangroups-two, .spangroups-tree {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.spangroups-one span {
-    background-color: rgb(255, 208, 0);
-}
-
-.spangroups-two span {
-    background-color: rgb(0, 238, 255);
-}
-
-.spangroups-tree span {
-    background-color: rgb(253, 116, 116);
-}
-
-
-.divgroups span {
-    width: 10px;
-    height: 10px;
-}
-/* Tabela Times, Section Second */
-
-.tabela-camp {
-    width: 800px;
-    height: 50px;
+    height: 140vh;
+  }
+  
+  .tabela-lado-esquerdo, .tabela-lado-direito {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
     border-collapse: collapse;
-    margin-top: 40px;
-}
-
-.tabela-camp tr td {
-    font-size: 18px;
-    color: white;
-    border: 1px solid white;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
     padding: 8px;
+  }
+
+  td {
     text-align: center;
-    vertical-align: middle;
-}
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
 
-.tabela-camp tr td img {
-    width: 40px;
-    height: 40px;
-}
+  tr:nth-child(even) {
+    background-color: rgb(29, 28, 28);
+  }
+  
+  tr:hover {
+    background-color: rgb(255, 187, 0);
+    color: black;
+    transition: all 0.5s ease;
+  }
 
-.tabela-camp tr td .times {
+  tr:hover #nomeColor  {
+    color: black;
+  }
+
+  tr:hover #pontosColor {
+    color: black;
+  }
+
+  tr:hover #posColor {
+    color: black;
+  }
+
+  .escudo {
+    width: 50px;
+
+  }
+
+  #nomeColor {
+    color: white;
+  }
+
+  #pontosColor {
+    color: white;
+  }
+
+  #posColor {
+    color: rgb(255, 187, 0);
+  }
+
+
+  .time-info {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
+  }
+  
+  .time-info img {
+    margin-right: 5px; /* Espaçamento entre a imagem e o nome do time */
+  }
 
-.tabela-camp tr td .pontos-time span {
-    color: white;
-}
+  .time-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .time-info img {
+    margin-right: 5px; /* Espaçamento entre a imagem e o nome do time */
+  }
 
-.tabela-camp .position-times {
-    color: rgb(255, 208, 0);
-}
+  .btnEdit {
+    padding: 20px;
+    border: 1px solid rgb(255, 187, 0);
+    background-color: transparent;
+    color: rgb(255, 187, 0);
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
 
-.tabela-camp .pontos-time {
-    color: rgb(255, 208, 0);
-}
+  .btnEdit:hover {
+    background-color: rgb(255, 187, 0);
+    color: black;
+    border: 1px solid black;
+  }
 
 /* Estaticas Campeonato */
 

@@ -23,220 +23,43 @@
             </nav>
         </div>
     </header>
-    <section class="container-section-one">
-        <div class="tabela-section">
-            <h2>TABELA DO CAMPEONATO</h2>
-            <p>Rodada Atual: <span>7º Rodada</span></p>
+    <div class="container">
+        <div class="tabela-lado-esquerdo">
+          <h2 style="color:rgba(255, 208, 0, 0.986); margin-bottom: 30px;">Classificação</h2>
+          <table id="tabela-classificacao">
+            <thead>
+              <tr id="tabelaAB">
+                <th>Posição</th>
+                <th>Time</th>
+                <th>Pontos</th>
+                <th>Jogos</th>
+                <th>Saldo de Gols</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Os dados da tabela serão inseridos aqui dinamicamente -->
+            </tbody>
+          </table>
         </div>
-        <table class="tabela-camp">
-            <tr>
-                <td class="position-times">1º</td>
-                <td><div class="times"><img src="img/everestlogo.png">Everest HFC</div></td>
-                <td><div class="pontos-time">
-                    <span>16</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    5 V
-                </div></td>
-                <td><div class="der-time">
-                    0 D
-                </div></td>
-                <td><div class="saldo-time">
-                    43 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times">2º</td>
-                <td><div class="times"><img src="img/aWlogo.png">We Already Won</div></td>
-                <td><div class="pontos-time">
-                    <span>13</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    4 V
-                </div></td>
-                <td><div class="der-time">
-                    1 D
-                </div></td>
-                <td><div class="saldo-time">
-                    24 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times">3º</td>
-                <td><div class="times"><img src="img/wildlogo.png">Wild Lions</div></td>
-                <td><div class="pontos-time">
-                    <span>12</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    4 V
-                </div></td>
-                <td><div class="der-time">
-                    2 D
-                </div></td>
-                <td><div class="saldo-time">
-                    12 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times">4º</td>
-                <td><div class="times"><img src="img/imglogogamer.png">Kozuki</div></td>
-                <td><div class="pontos-time">
-                    <span>10</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    3 V
-                </div></td>
-                <td><div class="der-time">
-                    2 D
-                </div></td>
-                <td><div class="saldo-time">
-                    5 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times" id="ps-times">5º</td>
-                <td><div class="times"><img src="img/logourun.webp">sKills</div></td>
-                <td><div class="pontos-time">
-                    <span>10</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    3 V
-                </div></td>
-                <td><div class="der-time">
-                    2 D
-                </div></td>
-                <td><div class="saldo-time">
-                    4 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times" id="ps-times">6º</td>
-                <td><div class="times"><img src="img/logonav.png">Natus Vincere</div></td>
-                <td><div class="pontos-time">
-                    <span>9</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    3 V
-                </div></td>
-                <td><div class="der-time">
-                    2 D
-                </div></td>
-                <td><div class="saldo-time">
-                    -3 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times" id="ps-times">7º</td>
-                <td><div class="times"><img src="img/logourun.webp">River Plate</div></td>
-                <td><div class="pontos-time">
-                    <span>9</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    3 V
-                </div></td>
-                <td><div class="der-time">
-                    2 D
-                </div></td>
-                <td><div class="saldo-time">
-                    -4 SG
-                </div></td>
-            <tr>
-                <td class="position-times" id="ps-times">8º</td>
-                <td><div class="times"><img src="img/logoibis.png" style="width: 40px; height: 50px;">Ibis Sport Clube</div></td>
-                <td><div class="pontos-time">
-                    <span>6</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    2 V
-                </div></td>
-                <td><div class="der-time">
-                    4 D
-                </div></td>
-                <td><div class="saldo-time">
-                    -12 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times" id="ps-timesl">9º</td>
-                <td><div class="times"><img src="img/logoeagles.png">The Eagles of Sparta</div></td>
-                <td><div class="pontos-time">
-                    <span>6</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    2 V
-                </div></td>
-                <td><div class="der-time">
-                    4 D
-                </div></td>
-                <td><div class="saldo-time">
-                    -16 SG
-                </div></td>
-            </tr>
-            </tr>
-            <tr>
-                <td class="position-times" id="ps-timesl">10º</td>
-                <td><div class="times"><img src="img/logopl.png" style="width: 30px; height: 35px; padding-left: 5px;">Portland</div></td>
-                <td><div class="pontos-time">
-                    <span>3</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    1 V
-                </div></td>
-                <td><div class="der-time">
-                    4 D
-                </div></td>
-                <td><div class="saldo-time">
-                    -2 SG
-                </div></td>
-            </tr>
-            <tr>
-                <td class="position-times" id="ps-timesl">11º</td>
-                <td><div class="times"><img src="img/logotfc.png">Tourino FC</div></td>
-                <td><div class="pontos-time">
-                    <span>3</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    1 V
-                </div></td>
-                <td><div class="der-time">
-                    4 D
-                </div></td>
-                <td><div class="saldo-time">
-                    -28 SG
-                </div></td>
-            <tr>
-                <td class="position-times" id="ps-timesl">12º</td>
-                <td><div class="times"><img src="img/logoar.png">We Already Won²</div></td>
-                <td><div class="pontos-time">
-                    <span>3</span> pts
-                </div></td>
-                <td><div class="victory-time">
-                    1 V
-                </div></td>
-                <td><div class="der-time">
-                    5 D
-                </div></td>
-                <td><div class="saldo-time">
-                    -23 SG
-                </div></td>
-            </tr>
-        </table>
-        <div class="divgroups">
-            <div class="spangroups-one"><span></span>Mata-Mata Liga</div>
-            <div class="spangroups-two"><span></span>Classificação Copa</div>
-            <div class="spangroups-tree"><span></span>Eliminado</div>
+        <div class="tabela-lado-direito">
+          <h2 style="color:rgba(255, 208, 0, 0.986); margin-bottom: 30px;">Resultados - Rodada <span id="numero-rodada">1</span></h2>
+          <table id="tabela-resultados">
+            <thead>
+              <tr>
+                <th>Time A</th>
+                <th>Placar</th>
+                <th>Time B</th>
+                <th>Rodada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Os resultados dos jogos serão inseridos aqui dinamicamente -->
+            </tbody>
+          </table>
+          <button id="rodada-anterior" class="btnEdit">Rodada Anterior</button>
+          <button id="proximo-rodada" class="btnEdit">Próxima Rodada</button>
         </div>
-        <div class="alinhamentologo">
-            <img src="img/alinhamentologo.png" alt="">
-        </div>
-    </section>
-    <!-- Estilo de Efeito -->
-    <div class="efeito-amarelo">
-        <img src="img/efeitoamarelo.webp" alt="">
-    </div>
-    <div class="efeito-amarelo-second">
-        <img src="img/efeitoamarelo.webp" alt="">
-    </div>
+      </div>
     <!-- Segunda Section: Estaticas -->
     <section class="container-section-second">
         <div class="estaticas-gerais">
@@ -460,5 +283,6 @@
             <a href="https://discord.gg/6e33MAKU"><i class="bi bi-discord"></i></a>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
