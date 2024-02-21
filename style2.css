@@ -832,17 +832,142 @@ body {
 
     /* Section */
 
-    .container-section-one {
+    .container {
+        flex-direction: column;
+        height: 220vh;
+      }
+      
+      .tabela-lado-esquerdo, .tabela-lado-direito {
+        width: 100%;
+        padding: 0;
+        margin-top: 50px;
+      }
+      
+      table {
+        font-size: 14px;
+      }
+
+      .tabela-lado-direito {
+        overflow-x: hidden;
+      }
+
+      .tabela-lado-esquerdo {
+        overflow-x: hidden;
+      }
+
+    /* Section Two Estaticas */
+
+    .container-section-second {
         height: 100%;
     }
 
-    .tabela-camp {
+    .estaticas-gerais {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .estaticas-container-left {
+        width: 100%;
+    }
+
+    .estaticas-container-right {
+        width: 100%;
+    }
+
+    .emblema-estatica img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .player-estatica img {
+        width: 90px;
+        height: 75px;
+    }
+
+    .player-estatica {
+        transform: translate(40%, 70%);
+    }
+
+    .estaticastot h3 {
+        font-size: 23px;
+    }
+
+    .posestatic h4 {
+        font-size: 50px;
+    }
+
+    .jogador-estaticas {
+        width: 100%;
+        height: 140px;
+    }
+
+    /* Section Tree */
+
+    .tabela-estaticas {
         max-width: 350px;
     }
 
-    .container-section-one .tabela-section {
-        margin-top: 40px;
+    .top-estaticas {
+        height: 100%;
     }
+
+    .alinhamentologo img {
+        width: 400px;
+
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .efeito-amarelo {
+        display: none;
+    }
+
+    .efeito-amarelo-second {
+        display: none;
+    }
+
+    /* Header */
+
+    .container-header {
+        height: 20vh;
+        position: relative;
+    }
+
+    .header-description {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #copaidresp {
+        display: none;
+    }
+
+    .header-description nav ul {
+        padding-left: 30px;
+    }
+
+    /* Section */
+
+    .container {
+        flex-direction: column;
+        height: 220vh;
+      }
+      
+      .tabela-lado-esquerdo, .tabela-lado-direito {
+        width: 100%;
+        padding: 0;
+        margin-top: 50px;
+      }
+      
+      table {
+        font-size: 14px;
+      }
 
     /* Section Two Estaticas */
 
