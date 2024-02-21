@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
   
     const rodadas = [
       [
-          { timeA: "Time A", timeB: "Time B" },
+          { timeA: "Time A", timeB: "Time L" },
           { timeA: "Time C", timeB: "Time D" },
           { timeA: "Time E", timeB: "Time F" },
           { timeA: "Time G", timeB: "Time H" },
           { timeA: "Time I", timeB: "Time J" },
-          { timeA: "Time K", timeB: "Time L" }
+          { timeA: "Time K", timeB: "Time B" }
       ],
       [
           { timeA: "Time A", timeB: "Time C" },
@@ -40,6 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
           { timeA: "Time H", timeB: "Time K" },
           { timeA: "Time J", timeB: "Time L" }
       ],
+      [
+        { timeA: "Time A", timeB: "Time E" },
+        { timeA: "Time B", timeB: "Time D" },
+        { timeA: "Time E", timeB: "Time C" },
+        { timeA: "Time F", timeB: "Time I" },
+        { timeA: "Time H", timeB: "Time L" },
+        { timeA: "Time J", timeB: "Time K" }
+    ],
+
       // Adicione mais rodadas conforme necessário
   ];
   
@@ -174,20 +183,31 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     function proximaRodada() {
-        if (rodadaAtual < rodadas.length - 1) {
-          rodadaAtual++;
-          document.getElementById("numero-rodada").textContent = rodadaAtual + 1;
-          atualizarTabelaResultados();
+      if (rodadaAtual < rodadas.length - 1) {
+        rodadaAtual++;
+        document.getElementById("numero-rodada").textContent = rodadaAtual + 1;
+        atualizarTabelaResultados();
+        if (rodadaAtual === 10) {
+          document.getElementById("proximo-rodada").disabled = true;
         }
+        // Ativar o botão "Rodada Anterior" se a rodada atual for menor que 11
+        if (rodadaAtual < 10) {
+          document.getElementById("rodada-anterior").disabled = false;
+        }
+      }
     }
-  
+    
     // Função para voltar para a rodada anterior
     function rodadaAnterior() {
-        if (rodadaAtual > 0) {
-          rodadaAtual--;
-          document.getElementById("numero-rodada").textContent = rodadaAtual + 1;
-          atualizarTabelaResultados();
+      if (rodadaAtual > 0) {
+        rodadaAtual--;
+        document.getElementById("numero-rodada").textContent = rodadaAtual + 1;
+        atualizarTabelaResultados();
+        // Ativar o botão "Próxima Rodada" se a rodada atual for menor ou igual a 10
+        if (rodadaAtual <= 10) {
+          document.getElementById("proximo-rodada").disabled = false;
         }
+      }
     }
   
     // Event listener para o botão de rodada anterior

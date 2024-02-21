@@ -427,6 +427,7 @@ body {
 
 /* Media Query */
 
+
 @media screen and (max-width: 1650px) {
 
     .efeito-amarelo {
@@ -491,17 +492,20 @@ body {
 
     /* Section */
 
-    .container-section-one {
-        height: 100%;
-    }
-
-    .container-section-one .tabela-section {
-        margin-top: 40px;
-    }
-
-    .tabela-camp {
-        max-width: 100%;
-    }
+    .container {
+        flex-direction: column;
+        height: 190vh;
+      }
+      
+      .tabela-lado-esquerdo, .tabela-lado-direito {
+        width: 90%;
+        padding: 0;
+        margin-top: 50px;
+      }
+      
+      table {
+        font-size: 14px;
+      }
 
     /* Section Two Estaticas */
 
