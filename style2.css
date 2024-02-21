@@ -834,7 +834,7 @@ body {
 
     .container {
         flex-direction: column;
-        height: 220vh;
+        height: 250vh;
       }
       
       .tabela-lado-esquerdo, .tabela-lado-direito {
@@ -956,7 +956,7 @@ body {
 
     .container {
         flex-direction: column;
-        height: 220vh;
+        height: 250vh;
       }
       
       .tabela-lado-esquerdo, .tabela-lado-direito {
